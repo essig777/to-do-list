@@ -1,0 +1,7 @@
+en:
+  enumerations:
+    situation_enum:
+      to_do: 'To do'
+      in_progress: 'In progress'
+      test: 'Test'
+      done: 'Done'

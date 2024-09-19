@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      task: 'Tarefa'
+      
+    attributes:
+      task:
+        task_id: 'ID da tarefa'
+        title: 'Título'
+        description: 'Descrição'
+        situation: 'Situação'
+        estimated_time: 'Tempo estimado'
+        image: 'Imagem'

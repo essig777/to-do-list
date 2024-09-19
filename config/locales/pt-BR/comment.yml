@@ -1,0 +1,9 @@
+pt-BR:
+  activerecord:
+    models:
+      comment: 'Comentário'
+
+    attributes:
+      description: 'Descrição'
+      commentable_type: 'Tipo comentário'
+      commentable_id: 'ID do tipo do comentário'
