@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   #User
   #Task
   
-  get '/tasks/:id/comment', to: 'tasks#list_comment'
+  get '/tasks/:id/comment', to: 'tasks#list_comments'
   post '/tasks/:id/create_comment', to: 'tasks#create_comment'
   patch '/tasks/:id/remove_image', to: 'tasks#remove_image'
   get '/tasks/:id/situations', to: 'tasks#show_enum'
@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   #Comment
   
-  get '/comments/:id/comment', to: 'comments#show_comment'
+  get '/comments/:id/comment', to: 'comments#show_comments'
 
   mount_devise_token_auth_for 'User', at: 'auth'
 

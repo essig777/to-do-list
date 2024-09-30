@@ -4,7 +4,7 @@ class Task < ApplicationRecord
   belongs_to :user, optional: true
 
   # has_many
-  has_many :comment, as: :commentable
+  has_many :comments, as: :commentable
 
   # Enumeration
   has_enumeration_for :situation, with: SituationEnum

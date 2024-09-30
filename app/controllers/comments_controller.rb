@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
-  before_action :set_comment, only: %i[ show edit update destroy show_comment ]
-  # before_action :authenticate_user!
+  before_action :set_comment, only: %i[ show edit update destroy show_comments ]
+  before_action :authenticate_user!
   def index
     @comments = Comment.all
     render json: @comments
@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
   def edit
   end
 
-  def show_comment
+  def show_comments
     render json: @comment.comment
   end
 
